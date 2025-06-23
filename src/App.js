@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import "./styles.css";
 import Header from "./components/Header";
@@ -6,8 +5,15 @@ import Footer from "./components/Footer";
 import MoviesGrid from "./components/MoviesGrid";
 import Watchlist from "./components/Watchlist";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function App() {
+  const [movies, setMovies] = useState([]);
+  useEffect(() => {
+    fetch("movies.json")
+      .then((response) => response.json())
+      .then((data) => setMovies(data));
+  }, []);
   return (
     <div className="App">
       <div className="container">
@@ -25,12 +31,10 @@ function App() {
             </ul>
           </nav>
           <Routes>
-            <Route path="/" element={<MoviesGrid />}></Route>
-            <Route path="/watchlist" element={<MoviesGrid />}></Route>
+            <Route path="/" element={<MoviesGrid movies={movies} />}></Route>
+            <Route path="/watchlist" element={<Watchlist />}></Route>
           </Routes>
         </Router>
-
-        <MoviesGrid></MoviesGrid>
       </div>
 
       <Footer></Footer>
