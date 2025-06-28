@@ -1,21 +1,67 @@
 # 🎬 Movie Dux
 
-Movie Dux is a simple React application that displays a collection of movies with their titles, genres, and ratings. It uses local JSON data and demonstrates the use of React components, useState, and useEffect hooks.
+Here’s an updated and enhanced version of your feature list for your React movie app project, incorporating:
 
-🖥️ Preview
+📂 Movie Categories by Genre
 
-**Coming soon...**
+⭐ Watchlist Functionality
 
----
+🔀 React Router for Navigation
 
-## 🚀 Features
+# 🖥️ Preview
 
-- 📖 View a list of movies with title, genre, and rating
-- 🖼️ Movie card layout with poster image
-- ⚛️ React hooks: useState and useEffect
-- 🎨 Clean and simple UI
+### Home Page
 
----
+![Home Page](Home-Page.png)
+
+### Categories By Genre
+
+![alt text](<Cat By Genre.png>)
+
+### Resonsive Design
+
+![alt text](<Responsive Page.png>)
+
+### Watchlist
+
+![alt text](Watchlist.png)
+
+# 🚀 Features
+
+📖 Browse Movies
+
+- View a list of movies with title, genre, and rating
+- Filter movies by genre/category
+
+🖼️ Movie Card Layout
+
+- Displays poster image, title, genre, and rating
+
+- Dynamic UI with fallback image/error handler
+
+⚛️ React Hooks
+
+- useState, useEffect, useReducer for managing state
+
+- useContext to manage watchlist state globally
+
+💾 Watchlist Feature
+
+- Add or remove movies to/from your personal watchlist
+
+- Watchlist persists during the session
+
+🔀 Routing with React Router
+
+- Navigate between Home, Watchlist, Movie Details
+
+- Dynamic routes (e.g. /movie/:id) to view movie-specific info
+
+🎨 Clean and Responsive UI
+
+- Minimalist design, styled components or custom CSS
+
+- Fully responsive across screen sizes
 
 ## 📦 Installation
 
@@ -28,15 +74,7 @@ npm install
 npm start
 ```
 
-## 🎬 Movie Dux
+# 🤝 Open for Contributions
 
-Movie Dux is a simple React application that displays a collection of movies with their titles, genres, and ratings. It uses local JSON data and showcases basic React features like components, useState, and useEffect.
-
-🚀 Features
-View a list of movies with title, genre, and rating
-
-Responsive movie card layout
-
-Image display for each movie
-
-Simple and clean UI built using React
+- Found a bug or want to improve this project?
+- Feel free to open an issue or submit a pull request! 🙌
